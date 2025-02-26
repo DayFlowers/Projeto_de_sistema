@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="poster">
+    <file>Ainda_Estou_Aqui.jpg</file>
+    <file>btn_img_wicked.png</file>
+    <file>disney.jpeg</file>
+    <file>duna 2.webp</file>
+    <file>filmes.jpg</file>
+    <file>flow.webp</file>
+    <file>Gladiador 2.webp</file>
+    <file>icon_perfil.png</file>
+    <file>jurado n 2.webp</file>
+    <file>moana.jpg</file>
+    <file>pousando no amor.jpg</file>
+    <file>robo.jpg</file>
+    <file>round 6.jpg</file>
+    <file>sena.webp</file>
+    <file>shop for killer.jpeg</file>
+    <file>substancia.jpg</file>
+  </qresource>
+</RCC>
