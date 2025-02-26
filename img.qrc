@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>btn_img_wicked.png</file>
+  </qresource>
+</RCC>
