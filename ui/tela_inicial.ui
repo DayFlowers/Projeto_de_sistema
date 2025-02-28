@@ -1,30 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>tela_principal</class>
- <widget class="QMainWindow" name="tela_principal">
+ <widget class="QWidget" name="tela_principal">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>977</width>
-    <height>503</height>
+    <width>1087</width>
+    <height>526</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Form</string>
   </property>
-  <widget class="QWidget" name="tela_inicial">
-   <widget class="QFrame" name="CineFilme">
+  <widget class="QFrame" name="tela_inicial">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>1031</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QFrame" name="inicial">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>30</y>
-      <width>771</width>
-      <height>421</height>
+      <x>0</x>
+      <y>0</y>
+      <width>1041</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 0, 0);</string>
+     <string notr="true">background-color: rgb(34, 31, 31);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Shape::StyledPanel</enum>
@@ -32,35 +49,35 @@
     <property name="frameShadow">
      <enum>QFrame::Shadow::Raised</enum>
     </property>
-    <widget class="QLabel" name="txt_Cine_Filmes">
+    <widget class="QLabel" name="txt_Cine_filme">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>0</y>
-       <width>171</width>
+       <x>10</x>
+       <y>10</y>
+       <width>161</width>
        <height>41</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 0, 0);
-font: 900 20pt &quot;Segoe UI&quot;;</string>
+font: 900 22pt &quot;Segoe UI&quot;;</string>
      </property>
      <property name="text">
-      <string>CineFilme</string>
+      <string>CineFilmes</string>
      </property>
     </widget>
-    <widget class="QLabel" name="txt_Filmes_e_Series">
+    <widget class="QLabel" name="txt_Filmes_Series">
      <property name="geometry">
       <rect>
-       <x>170</x>
-       <y>10</y>
-       <width>141</width>
+       <x>220</x>
+       <y>20</y>
+       <width>121</width>
        <height>21</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 0, 0);
-font: 14pt &quot;Segoe UI&quot;;</string>
+font: 12pt &quot;Segoe UI&quot;;</string>
      </property>
      <property name="text">
       <string>Filmes e Séries</string>
@@ -69,373 +86,455 @@ font: 14pt &quot;Segoe UI&quot;;</string>
     <widget class="QLabel" name="txt_Recomendacao_aleatoria">
      <property name="geometry">
       <rect>
-       <x>320</x>
-       <y>10</y>
-       <width>221</width>
+       <x>350</x>
+       <y>20</y>
+       <width>211</width>
        <height>21</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 0, 0);
-font: 14pt &quot;Segoe UI&quot;;</string>
+font: 12pt &quot;Segoe UI&quot;;</string>
      </property>
      <property name="text">
       <string>Recomendação aleatória</string>
      </property>
     </widget>
-    <widget class="QLabel" name="txt_Filmes_e_Series_Populares">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>90</y>
-       <width>231</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(255, 0, 0);
-font: 14pt &quot;Segoe UI&quot;;</string>
-     </property>
-     <property name="text">
-      <string>Filmes e séries Populares </string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="img_Wicked">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>120</y>
-       <width>91</width>
-       <height>121</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../qrc/poster.qrc">:/poster/btn_img_wicked.png</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="img_Ainda_estou_aqui">
-     <property name="geometry">
-      <rect>
-       <x>140</x>
-       <y>120</y>
-       <width>81</width>
-       <height>121</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../qrc/poster.qrc">:/poster/Ainda_Estou_Aqui.jpg</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="img_Substancia">
-     <property name="geometry">
-      <rect>
-       <x>250</x>
-       <y>120</y>
-       <width>81</width>
-       <height>121</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../qrc/poster.qrc">:/poster/substancia.jpg</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="img_Round_6">
-     <property name="geometry">
-      <rect>
-       <x>350</x>
-       <y>120</y>
-       <width>81</width>
-       <height>121</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../qrc/poster.qrc">:/poster/round 6.jpg</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="img_Robo_Selvagem">
-     <property name="geometry">
-      <rect>
-       <x>450</x>
-       <y>120</y>
-       <width>81</width>
-       <height>121</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../qrc/poster.qrc">:/poster/robo.jpg</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="img_Flow">
-     <property name="geometry">
-      <rect>
-       <x>550</x>
-       <y>120</y>
-       <width>81</width>
-       <height>121</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../qrc/poster.qrc">:/poster/flow.webp</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="img_Gladiador_2">
-     <property name="geometry">
-      <rect>
-       <x>28</x>
-       <y>270</y>
-       <width>81</width>
-       <height>121</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../qrc/poster.qrc">:/poster/Gladiador 2.webp</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="img_Jurado_2">
-     <property name="geometry">
-      <rect>
-       <x>140</x>
-       <y>270</y>
-       <width>81</width>
-       <height>121</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../qrc/poster.qrc">:/poster/jurado n 2.webp</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="img_Duna_parte_2">
-     <property name="geometry">
-      <rect>
-       <x>250</x>
-       <y>270</y>
-       <width>81</width>
-       <height>121</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../qrc/poster.qrc">:/poster/duna 2.webp</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="img_Diverdida_mente_2">
-     <property name="geometry">
-      <rect>
-       <x>350</x>
-       <y>270</y>
-       <width>81</width>
-       <height>121</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../qrc/poster.qrc">:/poster/disney.jpeg</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="img_Moana_2">
-     <property name="geometry">
-      <rect>
-       <x>450</x>
-       <y>270</y>
-       <width>81</width>
-       <height>121</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../qrc/poster.qrc">:/poster/moana.jpg</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="img_Senna">
-     <property name="geometry">
-      <rect>
-       <x>550</x>
-       <y>270</y>
-       <width>81</width>
-       <height>121</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../qrc/poster.qrc">:/poster/sena.webp</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="img_Pousando_no_amor">
-     <property name="geometry">
-      <rect>
-       <x>650</x>
-       <y>120</y>
-       <width>91</width>
-       <height>121</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../qrc/poster.qrc">:/poster/pousando no amor.jpg</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="img_Shoop_for_killers">
-     <property name="geometry">
-      <rect>
-       <x>660</x>
-       <y>270</y>
-       <width>81</width>
-       <height>111</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../qrc/poster.qrc">:/poster/shop for killer.jpeg</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
     <widget class="QLabel" name="icon_perfil">
      <property name="geometry">
       <rect>
-       <x>740</x>
-       <y>10</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap>:/icon 1/icon_perfil.png</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label">
-     <property name="geometry">
-      <rect>
-       <x>730</x>
-       <y>10</y>
+       <x>980</x>
+       <y>20</y>
        <width>27</width>
        <height>27</height>
       </rect>
      </property>
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>0</height>
-      </size>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 0);</string>
      </property>
      <property name="text">
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../qrc/poster.qrc">:/poster/icon_perfil.png</pixmap>
+      <pixmap resource="../qrc/poster.qrc">:/icon/icon_perfil.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
      </property>
     </widget>
-    <zorder>txt_Cine_Filmes</zorder>
-    <zorder>txt_Filmes_e_Series</zorder>
-    <zorder>txt_Recomendacao_aleatoria</zorder>
-    <zorder>txt_Filmes_e_Series_Populares</zorder>
-    <zorder>img_Wicked</zorder>
-    <zorder>img_Ainda_estou_aqui</zorder>
-    <zorder>img_Round_6</zorder>
-    <zorder>img_Robo_Selvagem</zorder>
-    <zorder>img_Flow</zorder>
-    <zorder>img_Gladiador_2</zorder>
-    <zorder>img_Jurado_2</zorder>
-    <zorder>img_Duna_parte_2</zorder>
-    <zorder>img_Diverdida_mente_2</zorder>
-    <zorder>img_Moana_2</zorder>
-    <zorder>img_Senna</zorder>
-    <zorder>img_Pousando_no_amor</zorder>
-    <zorder>img_Shoop_for_killers</zorder>
     <zorder>icon_perfil</zorder>
-    <zorder>img_Substancia</zorder>
-    <zorder>label</zorder>
+    <zorder>txt_Cine_filme</zorder>
+    <zorder>txt_Filmes_Series</zorder>
+    <zorder>txt_Recomendacao_aleatoria</zorder>
+   </widget>
+   <widget class="QLabel" name="img_Star_wars">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>71</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../qrc/poster.qrc">:/icon/star wars.webp</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_Whicked">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>140</y>
+      <width>81</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../qrc/poster.qrc">:/icon/btn_img_wicked.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_Flow">
+    <property name="geometry">
+     <rect>
+      <x>218</x>
+      <y>140</y>
+      <width>81</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../qrc/poster.qrc">:/icon/flow.webp</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_Ainda_estou_aqui">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>140</y>
+      <width>81</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../qrc/poster.qrc">:/icon/Ainda_Estou_Aqui.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>140</y>
+      <width>81</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../qrc/poster.qrc">:/icon/robo.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_Avengers">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>140</y>
+      <width>81</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../qrc/poster.qrc">:/icon/avengers.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_Diverdida_mente_2">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>140</y>
+      <width>81</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../qrc/poster.qrc">:/icon/disney.jpeg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_Jonh_Wick_3">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>140</y>
+      <width>91</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../qrc/poster.qrc">:/icon/Jonh wick.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_Duna_parte_2">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>140</y>
+      <width>81</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../qrc/poster.qrc">:/icon/duna 2.webp</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_One_Piece_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>310</y>
+      <width>81</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../qrc/poster.qrc">:/icon/one piece red.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_Solteiro_em_seul">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>310</y>
+      <width>81</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../qrc/poster.qrc">:/icon/single in seul.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_ghost_in_the_shell">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>310</y>
+      <width>81</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../qrc/poster.qrc">:/icon/ghost in the shell.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_Gladiador_2">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>310</y>
+      <width>81</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../qrc/poster.qrc">:/icon/Gladiador 2.webp</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_Senna">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>310</y>
+      <width>81</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../qrc/poster.qrc">:/icon/sena.webp</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_Substancia">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>310</y>
+      <width>91</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../qrc/poster.qrc">:/icon/substancia.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_Round_6">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>310</y>
+      <width>81</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../qrc/poster.qrc">:/icon/round 6.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_Pousando_no_amor">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>310</y>
+      <width>81</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../qrc/poster.qrc">:/icon/pousando no amor.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_Shop_For_killers">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>310</y>
+      <width>81</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../qrc/poster.qrc">:/icon/shop for killer.jpeg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_Duna_A_Profecia">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>310</y>
+      <width>81</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../qrc/poster.qrc">:/icon/duna serie.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_O_Problema_dos_tres_corpos">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>140</y>
+      <width>71</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../qrc/poster.qrc">:/icon/O_Problema_dos_3_Corpos.webp</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="txt_Populares">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);
+font: 12pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Populares</string>
+    </property>
    </widget>
   </widget>
  </widget>

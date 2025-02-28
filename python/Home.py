@@ -7,30 +7,23 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QMainWindow,
     QPushButton, QSizePolicy, QWidget)
+import fme
 
-import foto
-
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
-        if not MainWindow.objectName():
-            MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1001, 493)
-        self.centralwidget = QWidget(MainWindow)
-        self.centralwidget.setObjectName(u"centralwidget")
-        self.Home = QFrame(self.centralwidget)
+class Ui_Pag_inicial(object):
+    def setupUi(self, Pag_inicial):
+        if not Pag_inicial.objectName():
+            Pag_inicial.setObjectName(u"Pag_inicial")
+        Pag_inicial.resize(1002, 493)
+        self.tela_inicial = QWidget(Pag_inicial)
+        self.tela_inicial.setObjectName(u"tela_inicial")
+        self.Home = QFrame(self.tela_inicial)
         self.Home.setObjectName(u"Home")
         self.Home.setGeometry(QRect(40, 40, 931, 411))
         self.Home.setFrameShape(QFrame.Shape.StyledPanel)
         self.Home.setFrameShadow(QFrame.Shadow.Raised)
-        self.Home_2 = QLabel(self.Home)
-        self.Home_2.setObjectName(u"Home_2")
-        self.Home_2.setGeometry(QRect(-30, -20, 961, 441))
-        self.Home_2.setStyleSheet(u"gridline-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));")
-        self.Home_2.setPixmap(QPixmap(u":/icon/filmes.jpg"))
-        self.Home_2.setScaledContents(True)
         self.txt_CineFilmes = QLabel(self.Home)
         self.txt_CineFilmes.setObjectName(u"txt_CineFilmes")
-        self.txt_CineFilmes.setGeometry(QRect(20, 10, 171, 41))
+        self.txt_CineFilmes.setGeometry(QRect(10, 10, 171, 41))
         self.txt_CineFilmes.setStyleSheet(u"color: rgb(255, 0, 0);\n"
 "font: 22pt \"Segoe UI\";\n"
 "font: 900 22pt \"Segoe UI\";")
@@ -52,34 +45,45 @@ class Ui_MainWindow(object):
 "color: rgb(255, 255, 255);")
         self.btn_Entrar = QPushButton(self.Home)
         self.btn_Entrar.setObjectName(u"btn_Entrar")
-        self.btn_Entrar.setGeometry(QRect(830, 20, 75, 24))
+        self.btn_Entrar.setGeometry(QRect(824, 20, 81, 24))
         self.btn_Entrar.setStyleSheet(u"color: rgb(255, 255, 255);\n"
 "background-color: rgb(255, 0, 0);")
-        MainWindow.setCentralWidget(self.centralwidget)
+        self.label = QLabel(self.Home)
+        self.label.setObjectName(u"label")
+        self.label.setGeometry(QRect(-10, 0, 981, 441))
+        self.label.setPixmap(QPixmap(u":/fme/fme.jpg"))
+        self.label.setScaledContents(True)
+        self.label.raise_()
+        self.txt_CineFilmes.raise_()
+        self.txt_Seu_Guia_de_Filmes_e_Series.raise_()
+        self.txt_Venha_conferir.raise_()
+        self.btn_Descubra_Filmes_e_Series.raise_()
+        self.btn_Entrar.raise_()
+        Pag_inicial.setCentralWidget(self.tela_inicial)
 
-        self.retranslateUi(MainWindow)
+        self.retranslateUi(Pag_inicial)
 
-        QMetaObject.connectSlotsByName(MainWindow)
+        QMetaObject.connectSlotsByName(Pag_inicial)
     # setupUi
 
-    def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.Home_2.setText("")
-        self.txt_CineFilmes.setText(QCoreApplication.translate("MainWindow", u"CineFilmes", None))
-        self.txt_Seu_Guia_de_Filmes_e_Series.setText(QCoreApplication.translate("MainWindow", u"Seu Guia de Filmes e S\u00e9ries.", None))
-        self.txt_Venha_conferir.setText(QCoreApplication.translate("MainWindow", u"Venha conferir.", None))
-        self.btn_Descubra_Filmes_e_Series.setText(QCoreApplication.translate("MainWindow", u"Descubra Filmes e S\u00e9ries", None))
-        self.btn_Entrar.setText(QCoreApplication.translate("MainWindow", u"Entrar", None))
+    def retranslateUi(self, Pag_inicial):
+        Pag_inicial.setWindowTitle(QCoreApplication.translate("Pag_inicial", u"MainWindow", None))
+        self.txt_CineFilmes.setText(QCoreApplication.translate("Pag_inicial", u"CineFilmes", None))
+        self.txt_Seu_Guia_de_Filmes_e_Series.setText(QCoreApplication.translate("Pag_inicial", u"Seu Guia de Filmes e S\u00e9ries.", None))
+        self.txt_Venha_conferir.setText(QCoreApplication.translate("Pag_inicial", u"Venha conferir.", None))
+        self.btn_Descubra_Filmes_e_Series.setText(QCoreApplication.translate("Pag_inicial", u"Descubra Filmes e S\u00e9ries", None))
+        self.btn_Entrar.setText(QCoreApplication.translate("Pag_inicial", u"Entrar", None))
+        self.label.setText("")
     # retranslateUi
 
-import Home, sys
-from Home import Ui_MainWindow
- 
+import sys
+from PySide6.QtWidgets import QApplication, QMainWindow
+from Home import Ui_Pag_inicial
+
 if __name__ == "__main__":
-    import sys
     app = QApplication(sys.argv)
     MainWindow = QMainWindow()
-    ui = Ui_MainWindow()
+    ui = Ui_Pag_inicial()  # Correção: agora é uma instância da classe
     ui.setupUi(MainWindow)
     MainWindow.show()
-    sys.exit(app.exec())                    
+    sys.exit(app.exec())

@@ -1,20 +1,29 @@
 <RCC>
-  <qresource prefix="poster">
+  <qresource prefix="icon">
+    <file>duna serie.jpg</file>
+    <file>O_Problema_dos_3_Corpos.webp</file>
+    <file>shop for killer.jpeg</file>
+    <file>round 6.jpg</file>
+    <file>pousando no amor.jpg</file>
+    <file>substancia.jpg</file>
+    <file>Gladiador 2.webp</file>
+    <file>sena.webp</file>
     <file>Ainda_Estou_Aqui.jpg</file>
+    <file>avengers.jpg</file>
     <file>btn_img_wicked.png</file>
     <file>disney.jpeg</file>
     <file>duna 2.webp</file>
-    <file>filmes.jpg</file>
     <file>flow.webp</file>
-    <file>Gladiador 2.webp</file>
+    <file>fme.jpg</file>
+    <file>fme.qrc</file>
+    <file>ghost in the shell.jpg</file>
     <file>icon_perfil.png</file>
-    <file>jurado n 2.webp</file>
+    <file>Jonh wick.jpg</file>
     <file>moana.jpg</file>
-    <file>pousando no amor.jpg</file>
+    <file>one piece red.jpg</file>
+    <file>poster.qrc</file>
     <file>robo.jpg</file>
-    <file>round 6.jpg</file>
-    <file>sena.webp</file>
-    <file>shop for killer.jpeg</file>
-    <file>substancia.jpg</file>
+    <file>single in seul.jpg</file>
+    <file>star wars.webp</file>
   </qresource>
 </RCC>
