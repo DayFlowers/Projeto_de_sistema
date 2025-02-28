@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'login.ui'
+##
+## Created by: Qt User Interface Compiler version 6.8.1
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
 
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
@@ -7,14 +16,15 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QLineEdit,
-    QPushButton, QSizePolicy, QWidget)
-import fme
+    QPushButton, QSizePolicy, QWidget, QMainWindow)
+from qrc import *
+from cadastro import Ui_tela_Cadastro
 
 class Ui_login(object):
     def setupUi(self, login):
         if not login.objectName():
             login.setObjectName(u"login")
-        login.resize(1115, 509)
+        login.resize(1089, 509)
         self.tela_login = QFrame(login)
         self.tela_login.setObjectName(u"tela_login")
         self.tela_login.setGeometry(QRect(70, 20, 981, 441))
@@ -35,11 +45,11 @@ class Ui_login(object):
         self.btn_Email.setObjectName(u"btn_Email")
         self.btn_Email.setGeometry(QRect(20, 130, 291, 21))
         self.btn_Email.setStyleSheet(u"background-color: rgb(255, 255, 255);")
-        self.lineEdit = QLineEdit(self.rtn_login)
-        self.lineEdit.setObjectName(u"lineEdit")
-        self.lineEdit.setGeometry(QRect(20, 200, 291, 21))
-        self.lineEdit.setStyleSheet(u"background-color: rgb(255, 255, 255);")
-        self.lineEdit.setEchoMode(QLineEdit.EchoMode.Password)
+        self.btn_Senha = QLineEdit(self.rtn_login)
+        self.btn_Senha.setObjectName(u"btn_Senha")
+        self.btn_Senha.setGeometry(QRect(20, 200, 291, 21))
+        self.btn_Senha.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.btn_Senha.setEchoMode(QLineEdit.EchoMode.Password)
         self.btn_Entrar = QPushButton(self.rtn_login)
         self.btn_Entrar.setObjectName(u"btn_Entrar")
         self.btn_Entrar.setGeometry(QRect(80, 270, 161, 31))
@@ -58,41 +68,32 @@ class Ui_login(object):
         self.txt_Senha.setObjectName(u"txt_Senha")
         self.txt_Senha.setGeometry(QRect(20, 180, 49, 16))
         self.txt_Senha.setStyleSheet(u"color: rgb(255, 0, 0);")
-        self.txt_Cadastrase = QLabel(self.rtn_login)
-        self.txt_Cadastrase.setObjectName(u"txt_Cadastrase")
-        self.txt_Cadastrase.setGeometry(QRect(130, 320, 71, 16))
-        self.txt_Cadastrase.setStyleSheet(u"color: rgb(255, 0, 0);")
+        self.btn_Cadastrese = QPushButton(self.rtn_login)
+        self.btn_Cadastrese.setObjectName(u"btn_Cadastrese")
+        self.btn_Cadastrese.setGeometry(QRect(120, 320, 75, 24))
+        self.btn_Cadastrese.setStyleSheet(u"color: rgb(255, 0, 0);")
+
+        self.btn_Cadastrese.clicked.connect(self.cadastrese)
 
         self.retranslateUi(login)
 
-        QMetaObject.connectSlotsByName(login)
+    def cadastrese(self):
+        self.window_cadastro=QMainWindow()
+        self.Ui_cadastro=Ui_tela_Cadastro()
+        self.Ui_cadastro.setupUi(self.window_cadastro)
+        self.window_cadastro.show()
+
+        #QMetaObject.connectSlotsByName(login)
     # setupUi
 
     def retranslateUi(self, login):
         login.setWindowTitle(QCoreApplication.translate("login", u"Form", None))
         self.img_foto_fundo.setText("")
-        self.lineEdit.setText("")
+        self.btn_Senha.setText("")
         self.btn_Entrar.setText(QCoreApplication.translate("login", u"Entrar", None))
         self.txt_login.setText(QCoreApplication.translate("login", u"Login", None))
         self.txt_Email.setText(QCoreApplication.translate("login", u"E-mail", None))
         self.txt_Senha.setText(QCoreApplication.translate("login", u"Senha", None))
-        self.txt_Cadastrase.setText(QCoreApplication.translate("login", u"Cadastra-se", None))
+        self.btn_Cadastrese.setText(QCoreApplication.translate("login", u"Cadastre-se", None))
     # retranslateUi
 
-import sys
-from PySide6.QtWidgets import QApplication, QWidget
-from login import Ui_login
-
-class LoginScreen(QWidget):  
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_login()  
-        self.ui.setupUi(self)
-
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    window = LoginScreen()  
-    window.show()  
-    sys.exit(app.exec())
-
-    

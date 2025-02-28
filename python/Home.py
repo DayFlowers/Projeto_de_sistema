@@ -7,7 +7,10 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QMainWindow,
     QPushButton, QSizePolicy, QWidget)
-import fme
+
+from login import Ui_login                       
+from tela_inicial import Ui_tela_principal
+import poster_rc
 
 class Ui_Pag_inicial(object):
     def setupUi(self, Pag_inicial):
@@ -64,7 +67,26 @@ class Ui_Pag_inicial(object):
         self.retranslateUi(Pag_inicial)
 
         QMetaObject.connectSlotsByName(Pag_inicial)
+
+        self.btn_Entrar.clicked.connect(self.entrar_login)
+        self.btn_Descubra_Filmes_e_Series.clicked.connect(self.entrar_tela_inicial)
+
     # setupUi
+    def entrar_login(self):
+        
+        self.login_window = QMainWindow()  
+        self.login_ui = Ui_login()      
+        self.login_ui.setupUi(self.login_window) 
+        #self.Home.close()
+        self.login_window.show()          
+        self.Home.hide()
+
+    def entrar_tela_inicial (self):
+        self.tela_inicial_window = QMainWindow()  
+        self.inicial_ui = Ui_tela_principal()      
+        self.inicial_ui.setupUi(self.tela_inicial_window)  
+        self.tela_inicial_window.show()          
+        self.login_window.hide()    
 
     def retranslateUi(self, Pag_inicial):
         Pag_inicial.setWindowTitle(QCoreApplication.translate("Pag_inicial", u"MainWindow", None))

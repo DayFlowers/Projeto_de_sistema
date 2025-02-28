@@ -163,20 +163,20 @@ font: 22pt &quot;Segoe UI&quot;;</string>
       <string>Senha</string>
      </property>
     </widget>
-    <widget class="QLabel" name="txt_Cadastrase">
+    <widget class="QPushButton" name="btn_Cadastrese">
      <property name="geometry">
       <rect>
-       <x>130</x>
+       <x>120</x>
        <y>320</y>
-       <width>71</width>
-       <height>16</height>
+       <width>75</width>
+       <height>24</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 0, 0);</string>
      </property>
      <property name="text">
-      <string>Cadastra-se</string>
+      <string>Cadastre-se</string>
      </property>
     </widget>
    </widget>
@@ -184,7 +184,6 @@ font: 22pt &quot;Segoe UI&quot;;</string>
  </widget>
  <resources>
   <include location="../qrc/fme.qrc"/>
-  <include location="../../../../.designer/qrc/fme.qrc"/>
  </resources>
  <connections/>
 </ui>
