@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>tela_principal</class>
- <widget class="QWidget" name="tela_principal">
+ <class>tela_principal_1</class>
+ <widget class="QWidget" name="tela_principal_1">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1087</width>
+    <width>1075</width>
     <height>526</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QFrame" name="tela_inicial">
+  <widget class="QFrame" name="tela_inicial_1">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>30</x>
      <y>10</y>
      <width>1031</width>
      <height>501</height>
@@ -36,8 +36,8 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>1041</width>
-      <height>61</height>
+      <width>1031</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -49,7 +49,7 @@
     <property name="frameShadow">
      <enum>QFrame::Shadow::Raised</enum>
     </property>
-    <widget class="QLabel" name="txt_Cine_filme">
+    <widget class="QLabel" name="btn_Cine_filme">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -66,45 +66,11 @@ font: 900 22pt &quot;Segoe UI&quot;;</string>
       <string>CineFilmes</string>
      </property>
     </widget>
-    <widget class="QLabel" name="txt_Filmes_Series">
+    <widget class="QLabel" name="btn_icon_perfil">
      <property name="geometry">
       <rect>
-       <x>220</x>
-       <y>20</y>
-       <width>121</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(255, 0, 0);
-font: 12pt &quot;Segoe UI&quot;;</string>
-     </property>
-     <property name="text">
-      <string>Filmes e Séries</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="txt_Recomendacao_aleatoria">
-     <property name="geometry">
-      <rect>
-       <x>350</x>
-       <y>20</y>
-       <width>211</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(255, 0, 0);
-font: 12pt &quot;Segoe UI&quot;;</string>
-     </property>
-     <property name="text">
-      <string>Recomendação aleatória</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="icon_perfil">
-     <property name="geometry">
-      <rect>
-       <x>980</x>
-       <y>20</y>
+       <x>990</x>
+       <y>10</y>
        <width>27</width>
        <height>27</height>
       </rect>
@@ -116,23 +82,57 @@ font: 12pt &quot;Segoe UI&quot;;</string>
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../qrc/poster.qrc">:/icon/icon_perfil.png</pixmap>
+      <pixmap resource="../python/qrc/poster.qrc">:/icon/icon_perfil.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
      </property>
     </widget>
-    <zorder>icon_perfil</zorder>
-    <zorder>txt_Cine_filme</zorder>
-    <zorder>txt_Filmes_Series</zorder>
-    <zorder>txt_Recomendacao_aleatoria</zorder>
+    <widget class="QPushButton" name="btn_Filmes_e_Series">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>20</y>
+       <width>101</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 255, 0);
+color: rgb(255, 0, 0);
+background-color: rgb(34, 31, 31);</string>
+     </property>
+     <property name="text">
+      <string>Filmes e Séries</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_Recomendacao_aleatorio">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>20</y>
+       <width>171</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Recomendação aleatório</string>
+     </property>
+    </widget>
+    <zorder>btn_Recomendacao_aleatorio</zorder>
+    <zorder>btn_icon_perfil</zorder>
+    <zorder>btn_Cine_filme</zorder>
+    <zorder>btn_Filmes_e_Series</zorder>
    </widget>
-   <widget class="QLabel" name="img_Star_wars">
+   <widget class="QLabel" name="btn_Star_wars">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>140</y>
-      <width>71</width>
+      <width>81</width>
       <height>121</height>
      </rect>
     </property>
@@ -140,13 +140,13 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../qrc/poster.qrc">:/icon/star wars.webp</pixmap>
+     <pixmap resource="../python/qrc/poster.qrc">:/icon/star wars.webp</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="img_Whicked">
+   <widget class="QLabel" name="btn_Whicked">
     <property name="geometry">
      <rect>
       <x>110</x>
@@ -159,13 +159,13 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../qrc/poster.qrc">:/icon/btn_img_wicked.png</pixmap>
+     <pixmap resource="../python/qrc/poster.qrc">:/icon/btn_img_wicked.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="img_Flow">
+   <widget class="QLabel" name="btn_Flow">
     <property name="geometry">
      <rect>
       <x>218</x>
@@ -178,13 +178,13 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../qrc/poster.qrc">:/icon/flow.webp</pixmap>
+     <pixmap resource="../python/qrc/poster.qrc">:/icon/flow.webp</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="img_Ainda_estou_aqui">
+   <widget class="QLabel" name="btn_Ainda_estou_aqui">
     <property name="geometry">
      <rect>
       <x>320</x>
@@ -197,13 +197,13 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../qrc/poster.qrc">:/icon/Ainda_Estou_Aqui.jpg</pixmap>
+     <pixmap resource="../python/qrc/poster.qrc">:/icon/Ainda_Estou_Aqui.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_9">
+   <widget class="QLabel" name="btn_Robo_Selvagem">
     <property name="geometry">
      <rect>
       <x>420</x>
@@ -216,13 +216,13 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../qrc/poster.qrc">:/icon/robo.jpg</pixmap>
+     <pixmap resource="../python/qrc/poster.qrc">:/icon/robo.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="img_Avengers">
+   <widget class="QLabel" name="btn_Avengers">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -235,13 +235,13 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../qrc/poster.qrc">:/icon/avengers.jpg</pixmap>
+     <pixmap resource="../python/qrc/poster.qrc">:/icon/avengers.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="img_Diverdida_mente_2">
+   <widget class="QLabel" name="btn_Diverdida_mente_2">
     <property name="geometry">
      <rect>
       <x>620</x>
@@ -254,13 +254,13 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../qrc/poster.qrc">:/icon/disney.jpeg</pixmap>
+     <pixmap resource="../python/qrc/poster.qrc">:/icon/disney.jpeg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="img_Jonh_Wick_3">
+   <widget class="QLabel" name="btn_Jonh_Wick_3">
     <property name="geometry">
      <rect>
       <x>720</x>
@@ -273,13 +273,13 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../qrc/poster.qrc">:/icon/Jonh wick.jpg</pixmap>
+     <pixmap resource="../python/qrc/poster.qrc">:/icon/Jonh wick.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="img_Duna_parte_2">
+   <widget class="QLabel" name="btn_Duna_parte_2">
     <property name="geometry">
      <rect>
       <x>840</x>
@@ -292,13 +292,13 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../qrc/poster.qrc">:/icon/duna 2.webp</pixmap>
+     <pixmap resource="../python/qrc/poster.qrc">:/icon/duna 2.webp</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="img_One_Piece_2">
+   <widget class="QLabel" name="btn_One_Piece_2">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -311,18 +311,18 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../qrc/poster.qrc">:/icon/one piece red.jpg</pixmap>
+     <pixmap resource="../python/qrc/poster.qrc">:/icon/one piece red.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="img_Solteiro_em_seul">
+   <widget class="QLabel" name="btn_Solteiro_em_seul">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>310</y>
-      <width>81</width>
+      <width>91</width>
       <height>141</height>
      </rect>
     </property>
@@ -330,13 +330,13 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../qrc/poster.qrc">:/icon/single in seul.jpg</pixmap>
+     <pixmap resource="../python/qrc/poster.qrc">:/icon/single in seul.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="img_ghost_in_the_shell">
+   <widget class="QLabel" name="btn_ghost_in_the_shell">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -349,13 +349,13 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../qrc/poster.qrc">:/icon/ghost in the shell.jpg</pixmap>
+     <pixmap resource="../python/qrc/poster.qrc">:/icon/ghost in the shell.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="img_Gladiador_2">
+   <widget class="QLabel" name="btn_Gladiador_2">
     <property name="geometry">
      <rect>
       <x>320</x>
@@ -368,13 +368,13 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../qrc/poster.qrc">:/icon/Gladiador 2.webp</pixmap>
+     <pixmap resource="../python/qrc/poster.qrc">:/icon/Gladiador 2.webp</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="img_Senna">
+   <widget class="QLabel" name="btn_Senna">
     <property name="geometry">
      <rect>
       <x>420</x>
@@ -390,13 +390,13 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../qrc/poster.qrc">:/icon/sena.webp</pixmap>
+     <pixmap resource="../python/qrc/poster.qrc">:/icon/sena.webp</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="img_Substancia">
+   <widget class="QLabel" name="btn_Substancia">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -412,13 +412,13 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../qrc/poster.qrc">:/icon/substancia.jpg</pixmap>
+     <pixmap resource="../python/qrc/poster.qrc">:/icon/substancia.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="img_Round_6">
+   <widget class="QLabel" name="btn_Round_6">
     <property name="geometry">
      <rect>
       <x>630</x>
@@ -434,18 +434,18 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../qrc/poster.qrc">:/icon/round 6.jpg</pixmap>
+     <pixmap resource="../python/qrc/poster.qrc">:/icon/round 6.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="img_Pousando_no_amor">
+   <widget class="QLabel" name="btn_Pousando_no_amor">
     <property name="geometry">
      <rect>
       <x>730</x>
       <y>310</y>
-      <width>81</width>
+      <width>91</width>
       <height>141</height>
      </rect>
     </property>
@@ -456,13 +456,13 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../qrc/poster.qrc">:/icon/pousando no amor.jpg</pixmap>
+     <pixmap resource="../python/qrc/poster.qrc">:/icon/pousando no amor.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="img_Shop_For_killers">
+   <widget class="QLabel" name="btn_Shop_For_killers">
     <property name="geometry">
      <rect>
       <x>840</x>
@@ -475,13 +475,13 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../qrc/poster.qrc">:/icon/shop for killer.jpeg</pixmap>
+     <pixmap resource="../python/qrc/poster.qrc">:/icon/shop for killer.jpeg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="img_Duna_A_Profecia">
+   <widget class="QLabel" name="btn_Duna_A_Profecia">
     <property name="geometry">
      <rect>
       <x>940</x>
@@ -494,18 +494,18 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../qrc/poster.qrc">:/icon/duna serie.jpg</pixmap>
+     <pixmap resource="../python/qrc/poster.qrc">:/icon/duna serie.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="img_O_Problema_dos_tres_corpos">
+   <widget class="QLabel" name="btn_O_Problema_dos_tres_corpos">
     <property name="geometry">
      <rect>
       <x>940</x>
       <y>140</y>
-      <width>71</width>
+      <width>81</width>
       <height>131</height>
      </rect>
     </property>
@@ -513,7 +513,7 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../qrc/poster.qrc">:/icon/O_Problema_dos_3_Corpos.webp</pixmap>
+     <pixmap resource="../python/qrc/poster.qrc">:/icon/O_Problema_dos_3_Corpos.webp</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -539,7 +539,7 @@ font: 12pt &quot;Segoe UI&quot;;</string>
   </widget>
  </widget>
  <resources>
-  <include location="../qrc/poster.qrc"/>
+  <include location="../python/qrc/poster.qrc"/>
  </resources>
  <connections/>
 </ui>
