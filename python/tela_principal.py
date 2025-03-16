@@ -1,13 +1,3 @@
-# -*- coding: utf-8 -*-
-
-################################################################################
-## Form generated from reading UI file 'tela_principal.ui'
-##
-## Created by: Qt User Interface Compiler version 6.8.1
-##
-## WARNING! All changes made in this file will be lost when recompiling UI file!
-################################################################################
-
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
     QSize, QTime, QUrl, Qt)
@@ -17,6 +7,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QPushButton,
     QSizePolicy, QWidget)
+
 import poster_rc
 
 class Ui_tela_principal_1(object):
@@ -207,12 +198,12 @@ class Ui_tela_principal_1(object):
 
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
-from tela_inicial import Ui_tela_principal
+from tela_principal import Ui_tela_principal_1
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     Form = QMainWindow()
-    ui = Ui_tela_principal()
+    ui = Ui_tela_principal_1()
     ui.setupUi(Form)
     Form.show()
     sys.exit(app.exec())

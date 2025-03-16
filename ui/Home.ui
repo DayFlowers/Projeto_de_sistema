@@ -129,7 +129,7 @@ background-color: rgb(255, 0, 0);</string>
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../qrc/fme.qrc">:/fme/fme.jpg</pixmap>
+      <pixmap>:/fme/fme.jpg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -145,8 +145,7 @@ background-color: rgb(255, 0, 0);</string>
   </widget>
  </widget>
  <resources>
-  <include location="../qrc/fme.qrc"/>
-  <include location="../qrc/foto.qrc"/>
+  <include location="../python/qrc/poster.qrc"/>
  </resources>
  <connections/>
 </ui>
