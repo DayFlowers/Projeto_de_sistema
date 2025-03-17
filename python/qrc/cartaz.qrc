@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="cartaz 2">
+    <file>star wars 1.jpg</file>
+    <file>wicked 2.jpg</file>
+  </qresource>
+  <qresource prefix="icon perfil">
+    <file>icon_perfil.png</file>
+  </qresource>
+</RCC>
