@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1141</width>
-    <height>567</height>
+    <width>1135</width>
+    <height>540</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>30</y>
+      <y>10</y>
       <width>1041</width>
       <height>461</height>
      </rect>
@@ -29,25 +29,6 @@
     <property name="frameShadow">
      <enum>QFrame::Shadow::Raised</enum>
     </property>
-    <widget class="QLabel" name="tela_cartaz_1">
-     <property name="geometry">
-      <rect>
-       <x>-10</x>
-       <y>0</y>
-       <width>1051</width>
-       <height>491</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../python/qrc/cartaz.qrc">:/cartaz 2/star wars 1.jpg</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
     <widget class="QLabel" name="btn_Cine_filme">
      <property name="geometry">
       <rect>
@@ -68,14 +49,15 @@ font: 900 22pt &quot;Segoe UI&quot;;</string>
     <widget class="QLabel" name="btn_Filmes_e_Series">
      <property name="geometry">
       <rect>
-       <x>210</x>
+       <x>190</x>
        <y>20</y>
-       <width>101</width>
+       <width>111</width>
        <height>16</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: rgb(255, 0, 0);</string>
+      <string notr="true">color: rgb(255, 0, 0);
+font: 12pt &quot;Segoe UI&quot;;</string>
      </property>
      <property name="text">
       <string>Filmes e Séries</string>
@@ -86,12 +68,13 @@ font: 900 22pt &quot;Segoe UI&quot;;</string>
       <rect>
        <x>320</x>
        <y>20</y>
-       <width>131</width>
+       <width>181</width>
        <height>16</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: rgb(255, 0, 0);</string>
+      <string notr="true">color: rgb(255, 0, 0);
+font: 12pt &quot;Segoe UI&quot;;</string>
      </property>
      <property name="text">
       <string>Recomendação aleatória</string>
@@ -119,30 +102,13 @@ font: 900 22pt &quot;Segoe UI&quot;;</string>
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QLabel" name="txt_Star_Wars_A_Ascensao_Skywalker">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>90</y>
-       <width>281</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(255, 255, 255);
-font: 14pt &quot;Segoe UI&quot;;</string>
-     </property>
-     <property name="text">
-      <string>Star wars a ascensão Skywalker</string>
-     </property>
-    </widget>
     <widget class="QLabel" name="txt_Com_Retorno_doImperqador">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>130</y>
+       <x>20</x>
+       <y>170</y>
        <width>331</width>
-       <height>31</height>
+       <height>51</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -156,8 +122,8 @@ font: 12pt &quot;Segoe UI&quot;;</string>
     <widget class="QLabel" name="txt_Resistencia">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>147</y>
+       <x>20</x>
+       <y>200</y>
        <width>351</width>
        <height>31</height>
       </rect>
@@ -173,8 +139,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="txt_Para_Ser_uma_completa">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>170</y>
+       <x>20</x>
+       <y>220</y>
        <width>341</width>
        <height>21</height>
       </rect>
@@ -191,10 +157,10 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="txt_Conflito">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>190</y>
+       <x>20</x>
+       <y>230</y>
        <width>331</width>
-       <height>16</height>
+       <height>41</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -208,8 +174,8 @@ font: 12pt &quot;Segoe UI&quot;;</string>
     <widget class="QLabel" name="txt_Respostas">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>210</y>
+       <x>20</x>
+       <y>260</y>
        <width>331</width>
        <height>21</height>
       </rect>
@@ -222,6 +188,53 @@ font: 12pt &quot;Segoe UI&quot;;</string>
       <string>respostas que pode conseguir com Kylon Ren.</string>
      </property>
     </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>-11</y>
+       <width>1041</width>
+       <height>481</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../python/qrc/cartaz.qrc">:/icon 1/star wars 1.jpg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>130</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 900 14pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Star Wars: Episódio IX</string>
+     </property>
+    </widget>
+    <zorder>label</zorder>
+    <zorder>btn_Cine_filme</zorder>
+    <zorder>btn_Filmes_e_Series</zorder>
+    <zorder>btn_Recomendao_aleatoria</zorder>
+    <zorder>icon_perfil</zorder>
+    <zorder>txt_Com_Retorno_doImperqador</zorder>
+    <zorder>txt_Resistencia</zorder>
+    <zorder>txt_Para_Ser_uma_completa</zorder>
+    <zorder>txt_Conflito</zorder>
+    <zorder>txt_Respostas</zorder>
+    <zorder>label_2</zorder>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -229,7 +242,7 @@ font: 12pt &quot;Segoe UI&quot;;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1141</width>
+     <width>1135</width>
      <height>22</height>
     </rect>
    </property>

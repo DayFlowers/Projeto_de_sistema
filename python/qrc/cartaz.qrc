@@ -1,9 +1,11 @@
 <RCC>
-  <qresource prefix="cartaz 2">
+  <qresource prefix="icon 1">
     <file>star wars 1.jpg</file>
+  </qresource>
+  <qresource prefix="icon 2">
     <file>wicked 2.jpg</file>
   </qresource>
-  <qresource prefix="icon perfil">
-    <file>icon_perfil.png</file>
+  <qresource prefix="icon 3">
+    <file>flow 3.webp</file>
   </qresource>
 </RCC>
