@@ -1,9 +1,35 @@
 <RCC>
-  <qresource prefix="cartaz 2">
+  <qresource prefix="icon 1">
     <file>star wars 1.jpg</file>
+  </qresource>
+  <qresource prefix="icon 2">
     <file>wicked 2.jpg</file>
   </qresource>
-  <qresource prefix="icon perfil">
-    <file>icon_perfil.png</file>
+  <qresource prefix="icon 3">
+    <file>ainda estou aqui 4.jpg</file>
+  </qresource>
+  <qresource prefix="icon 4">
+    <file>john wick 3 8.jpg</file>
+  </qresource>
+  <qresource prefix="icon 5">
+    <file>flow 3.png</file>
+  </qresource>
+  <qresource prefix="icon 6">
+    <file>diverdida mente 2 7.jpg</file>
+  </qresource>
+  <qresource prefix="icon 7">
+    <file>duna 2 9.png</file>
+  </qresource>
+  <qresource prefix="icon 8">
+    <file>o problema dos tres corpos 10.webp</file>
+  </qresource>
+  <qresource prefix="icon 9">
+    <file>robo selvagem 6.jpg</file>
+  </qresource>
+  <qresource prefix="icon 10">
+    <file>vingadores 5.jpg</file>
+  </qresource>
+  <qresource prefix="icon 11">
+    <file>single seul 11.jpg</file>
   </qresource>
 </RCC>
