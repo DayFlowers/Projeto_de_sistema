@@ -1,11 +1,20 @@
 <RCC>
-  <qresource prefix="icon 1">
+  <qresource prefix="ICON 1">
     <file>star wars 1.jpg</file>
   </qresource>
-  <qresource prefix="icon 2">
+  <qresource prefix="perfil">
+    <file>icon_perfil.png</file>
+  </qresource>
+  <qresource prefix="ICON 2">
     <file>wicked 2.jpg</file>
   </qresource>
-  <qresource prefix="icon 3">
-    <file>flow 3.webp</file>
+  <qresource prefix="ICON 3">
+    <file>flow 3.png</file>
+  </qresource>
+  <qresource prefix="ICON 4">
+    <file>ainda estou aqui 4.jpg</file>
+  </qresource>
+  <qresource prefix="ICON 5">
+    <file>vingadores 5.jpg</file>
   </qresource>
 </RCC>

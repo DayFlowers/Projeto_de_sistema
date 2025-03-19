@@ -188,7 +188,7 @@ font: 12pt &quot;Segoe UI&quot;;</string>
       <string>respostas que pode conseguir com Kylon Ren.</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label">
+    <widget class="QLabel" name="img_Star_wars">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -201,7 +201,7 @@ font: 12pt &quot;Segoe UI&quot;;</string>
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../python/qrc/cartaz.qrc">:/icon 1/star wars 1.jpg</pixmap>
+      <pixmap>:/icon 1/star wars 1.jpg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -211,7 +211,7 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>130</y>
+       <y>140</y>
        <width>211</width>
        <height>31</height>
       </rect>
@@ -224,7 +224,27 @@ color: rgb(255, 255, 255);</string>
       <string>Star Wars: Episódio IX</string>
      </property>
     </widget>
-    <zorder>label</zorder>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>0</y>
+       <width>1051</width>
+       <height>471</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../python/qrc/cartaz.qrc">:/ICON 1/star wars 1.jpg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <zorder>label_3</zorder>
+    <zorder>img_Star_wars</zorder>
     <zorder>btn_Cine_filme</zorder>
     <zorder>btn_Filmes_e_Series</zorder>
     <zorder>btn_Recomendao_aleatoria</zorder>

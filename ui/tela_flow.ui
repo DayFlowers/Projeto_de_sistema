@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>tela_Flow</class>
+ <widget class="QMainWindow" name="tela_Flow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1026</width>
+    <height>509</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="tela_flow">
+   <widget class="QFrame" name="tela_gato_preto">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>50</y>
+      <width>891</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QLabel" name="btn_Cine_filme">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 0);
+font: 900 22pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>CineFilmes</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="btn_Filmes_e_series">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>10</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 0);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Filmes e Séries</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="btn_Recomendacao_aleatoria">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>15</y>
+       <width>181</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 0);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Recomendação aleatória</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_Gato__um_animal_solitario">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>341</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Gato é um animal solitário, mas quando seu lar é</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_devastado_por_uma_grande_inundacao_ele_encontra">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>361</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>devastado por uma grande inundação, ele encontra </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_Refugio_em_um_barco_povoado_por_varias_especies">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>371</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>refúgio em um barco povoado por várias espécies, e</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_tem_que_reunir_a_elas_a_pesar_de_suas_diferencas">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>341</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>tem que se unir a elas apesar de suas diferenças.</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_Flow">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>49</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 900 14pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Flow</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="tela_tres">
+     <property name="geometry">
+      <rect>
+       <x>-2</x>
+       <y>-1</y>
+       <width>901</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../python/qrc/cartaz.qrc">:/ICON 3/flow 3.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="btn_icon_perfil">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>10</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../python/qrc/cartaz.qrc">:/perfil/icon_perfil.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <zorder>tela_tres</zorder>
+    <zorder>btn_Cine_filme</zorder>
+    <zorder>btn_Filmes_e_series</zorder>
+    <zorder>btn_Recomendacao_aleatoria</zorder>
+    <zorder>txt_Gato__um_animal_solitario</zorder>
+    <zorder>txt_devastado_por_uma_grande_inundacao_ele_encontra</zorder>
+    <zorder>txt_Refugio_em_um_barco_povoado_por_varias_especies</zorder>
+    <zorder>txt_tem_que_reunir_a_elas_a_pesar_de_suas_diferencas</zorder>
+    <zorder>txt_Flow</zorder>
+    <zorder>btn_icon_perfil</zorder>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1026</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../python/qrc/cartaz.qrc"/>
+ </resources>
+ <connections/>
+</ui>
