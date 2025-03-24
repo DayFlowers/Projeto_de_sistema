@@ -14,7 +14,7 @@ class Ui_tela_principal_1(object):
     def setupUi(self, tela_principal_1):
         if not tela_principal_1.objectName():
             tela_principal_1.setObjectName(u"tela_principal_1")
-        tela_principal_1.resize(1075, 526)
+        tela_principal_1.resize(1075, 525)
         self.tela_principal_2 = QFrame(tela_principal_1)
         self.tela_principal_2.setObjectName(u"tela_principal_2")
         self.tela_principal_2.setGeometry(QRect(30, 10, 1031, 501))
@@ -40,18 +40,25 @@ class Ui_tela_principal_1(object):
         self.btn_icon_perfil.setScaledContents(True)
         self.btn_Filmes_e_Series = QPushButton(self.inicial)
         self.btn_Filmes_e_Series.setObjectName(u"btn_Filmes_e_Series")
-        self.btn_Filmes_e_Series.setGeometry(QRect(200, 20, 101, 24))
+        self.btn_Filmes_e_Series.setGeometry(QRect(320, 20, 101, 24))
         self.btn_Filmes_e_Series.setStyleSheet(u"color: rgb(0, 255, 0);\n"
 "color: rgb(255, 0, 0);\n"
 "background-color: rgb(34, 31, 31);")
         self.btn_Recomendacao_aleatorio = QPushButton(self.inicial)
         self.btn_Recomendacao_aleatorio.setObjectName(u"btn_Recomendacao_aleatorio")
-        self.btn_Recomendacao_aleatorio.setGeometry(QRect(330, 20, 171, 24))
+        self.btn_Recomendacao_aleatorio.setGeometry(QRect(440, 20, 171, 24))
         self.btn_Recomendacao_aleatorio.setStyleSheet(u"color: rgb(255, 0, 0);")
+        self.btn_Inicio = QPushButton(self.inicial)
+        self.btn_Inicio.setObjectName(u"btn_Inicio")
+        self.btn_Inicio.setGeometry(QRect(200, 20, 101, 24))
+        self.btn_Inicio.setStyleSheet(u"color: rgb(0, 255, 0);\n"
+"color: rgb(255, 0, 0);\n"
+"background-color: rgb(34, 31, 31);")
         self.btn_Recomendacao_aleatorio.raise_()
         self.btn_icon_perfil.raise_()
         self.btn_Cine_filme.raise_()
         self.btn_Filmes_e_Series.raise_()
+        self.btn_Inicio.raise_()
         self.btn_Star_wars = QLabel(self.tela_principal_2)
         self.btn_Star_wars.setObjectName(u"btn_Star_wars")
         self.btn_Star_wars.setGeometry(QRect(10, 140, 81, 121))
@@ -173,6 +180,7 @@ class Ui_tela_principal_1(object):
         self.btn_icon_perfil.setText("")
         self.btn_Filmes_e_Series.setText(QCoreApplication.translate("tela_principal_1", u"Filmes e S\u00e9ries", None))
         self.btn_Recomendacao_aleatorio.setText(QCoreApplication.translate("tela_principal_1", u"Recomenda\u00e7\u00e3o aleat\u00f3rio", None))
+        self.btn_Inicio.setText(QCoreApplication.translate("tela_principal_1", u"Inicio", None))
         self.btn_Star_wars.setText("")
         self.btn_Whicked.setText("")
         self.btn_Flow.setText("")
@@ -207,4 +215,3 @@ if __name__ == "__main__":
     ui.setupUi(Form)
     Form.show()
     sys.exit(app.exec())
-

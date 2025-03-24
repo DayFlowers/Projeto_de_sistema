@@ -9,7 +9,7 @@ from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QMainWindow,
     QMenuBar, QPushButton, QSizePolicy, QStatusBar,
     QTextBrowser, QWidget)
 
-import filmecinco_rc
+import filmecinco
 
 class Ui_tela_filme_5(object):
     def setupUi(self, tela_filme_5):
@@ -107,3 +107,15 @@ class Ui_tela_filme_5(object):
         self.txt_Elenco_Lee_Dong_Wook_Kim_Hye_Jun_Park_Ji_bin = QLabel(self.frame)
         self.txt_Elenco_Lee_Dong_Wook_Kim_Hye_Jun_Park_Ji_bin.setObjectName(u"txt_Elenco_Lee_Dong_Wook_Kim_Hye_Jun_Park_Ji_bin")
        
+       
+import sys
+from PySide6.QtWidgets import QApplication, QMainWindow
+from tela_principal import Ui_tela_filme_5
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    Form = QMainWindow()
+    ui = Ui_tela_filme_5()
+    ui.setupUi(Form)
+    Form.show()
+    sys.exit(app.exec())
