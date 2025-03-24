@@ -7,6 +7,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QSizePolicy,
     QWidget)
+
 import poster_rc
 
 class Ui_tela_principal(object):

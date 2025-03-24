@@ -72,7 +72,7 @@ font: 900 22pt &quot;Segoe UI&quot;;</string>
        <x>990</x>
        <y>10</y>
        <width>27</width>
-       <height>27</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -82,7 +82,7 @@ font: 900 22pt &quot;Segoe UI&quot;;</string>
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../python/qrc/poster.qrc">:/icon/icon_perfil.png</pixmap>
+      <pixmap resource="../qrc/poster.qrc">:/icon perfil/icon_perfil.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -159,7 +159,7 @@ background-color: rgb(34, 31, 31);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../python/qrc/poster.qrc">:/icon/star wars.webp</pixmap>
+     <pixmap resource="../qrc/poster.qrc">:/icon 1/star wars.webp</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -178,7 +178,7 @@ background-color: rgb(34, 31, 31);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../python/qrc/poster.qrc">:/icon/btn_img_wicked.png</pixmap>
+     <pixmap resource="../qrc/poster.qrc">:/icon 2/btn_img_wicked.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -197,7 +197,7 @@ background-color: rgb(34, 31, 31);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../python/qrc/poster.qrc">:/icon/flow.webp</pixmap>
+     <pixmap resource="../qrc/poster.qrc">:/icon 3/flow.webp</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -216,7 +216,7 @@ background-color: rgb(34, 31, 31);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../python/qrc/poster.qrc">:/icon/Ainda_Estou_Aqui.jpg</pixmap>
+     <pixmap resource="../qrc/poster.qrc">:/icon 4/Ainda_Estou_Aqui.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -235,7 +235,7 @@ background-color: rgb(34, 31, 31);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../python/qrc/poster.qrc">:/icon/robo.jpg</pixmap>
+     <pixmap resource="../qrc/poster.qrc">:/icon 5/robo.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -254,7 +254,7 @@ background-color: rgb(34, 31, 31);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../python/qrc/poster.qrc">:/icon/avengers.jpg</pixmap>
+     <pixmap resource="../qrc/poster.qrc">:/icon 6/avengers.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -273,7 +273,7 @@ background-color: rgb(34, 31, 31);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../python/qrc/poster.qrc">:/icon/disney.jpeg</pixmap>
+     <pixmap resource="../qrc/poster.qrc">:/icon 7/disney.jpeg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -292,7 +292,7 @@ background-color: rgb(34, 31, 31);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../python/qrc/poster.qrc">:/icon/Jonh wick.jpg</pixmap>
+     <pixmap resource="../qrc/poster.qrc">:/icon 8/Jonh wick.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -311,7 +311,7 @@ background-color: rgb(34, 31, 31);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../python/qrc/poster.qrc">:/icon/duna 2.webp</pixmap>
+     <pixmap resource="../qrc/poster.qrc">:/icon 9/duna 2.webp</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -330,7 +330,7 @@ background-color: rgb(34, 31, 31);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../python/qrc/poster.qrc">:/icon/one piece red.jpg</pixmap>
+     <pixmap resource="../qrc/poster.qrc">:/icon 12/one piece red.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -349,7 +349,7 @@ background-color: rgb(34, 31, 31);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../python/qrc/poster.qrc">:/icon/single in seul.jpg</pixmap>
+     <pixmap resource="../qrc/poster.qrc">:/icon 11/single in seul.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -368,7 +368,7 @@ background-color: rgb(34, 31, 31);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../python/qrc/poster.qrc">:/icon/ghost in the shell.jpg</pixmap>
+     <pixmap resource="../qrc/poster.qrc">:/icon 13/ghost in the shell.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -387,7 +387,7 @@ background-color: rgb(34, 31, 31);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../python/qrc/poster.qrc">:/icon/Gladiador 2.webp</pixmap>
+     <pixmap resource="../qrc/poster.qrc">:/icon 14/Gladiador 2.webp</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -409,7 +409,7 @@ background-color: rgb(34, 31, 31);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../python/qrc/poster.qrc">:/icon/sena.webp</pixmap>
+     <pixmap resource="../qrc/poster.qrc">:/icon 15/sena.webp</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -431,7 +431,7 @@ background-color: rgb(34, 31, 31);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../python/qrc/poster.qrc">:/icon/substancia.jpg</pixmap>
+     <pixmap resource="../qrc/poster.qrc">:/icon 16/round 6.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -453,7 +453,7 @@ background-color: rgb(34, 31, 31);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../python/qrc/poster.qrc">:/icon/round 6.jpg</pixmap>
+     <pixmap resource="../qrc/poster.qrc">:/icon 17/substancia.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -475,7 +475,7 @@ background-color: rgb(34, 31, 31);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../python/qrc/poster.qrc">:/icon/pousando no amor.jpg</pixmap>
+     <pixmap resource="../qrc/poster.qrc">:/icon 18/pousando no amor.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -494,7 +494,7 @@ background-color: rgb(34, 31, 31);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../python/qrc/poster.qrc">:/icon/shop for killer.jpeg</pixmap>
+     <pixmap resource="../qrc/poster.qrc">:/icon 19/shop for killer.jpeg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -513,7 +513,7 @@ background-color: rgb(34, 31, 31);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../python/qrc/poster.qrc">:/icon/duna serie.jpg</pixmap>
+     <pixmap resource="../qrc/poster.qrc">:/icon 20/duna serie.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -532,7 +532,7 @@ background-color: rgb(34, 31, 31);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../python/qrc/poster.qrc">:/icon/O_Problema_dos_3_Corpos.webp</pixmap>
+     <pixmap resource="../qrc/poster.qrc">:/icon 10/O_Problema_dos_3_Corpos.webp</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -555,10 +555,32 @@ font: 12pt &quot;Segoe UI&quot;;</string>
      <string>Populares</string>
     </property>
    </widget>
+   <zorder>btn_Star_wars</zorder>
+   <zorder>inicial</zorder>
+   <zorder>btn_Whicked</zorder>
+   <zorder>btn_Flow</zorder>
+   <zorder>btn_Ainda_estou_aqui</zorder>
+   <zorder>btn_Robo_Selvagem</zorder>
+   <zorder>btn_Avengers</zorder>
+   <zorder>btn_Diverdida_mente_2</zorder>
+   <zorder>btn_Jonh_Wick_3</zorder>
+   <zorder>btn_Duna_parte_2</zorder>
+   <zorder>btn_One_Piece_2</zorder>
+   <zorder>btn_Solteiro_em_seul</zorder>
+   <zorder>btn_ghost_in_the_shell</zorder>
+   <zorder>btn_Gladiador_2</zorder>
+   <zorder>btn_Senna</zorder>
+   <zorder>btn_Substancia</zorder>
+   <zorder>btn_Round_6</zorder>
+   <zorder>btn_Pousando_no_amor</zorder>
+   <zorder>btn_Shop_For_killers</zorder>
+   <zorder>btn_Duna_A_Profecia</zorder>
+   <zorder>btn_O_Problema_dos_tres_corpos</zorder>
+   <zorder>txt_Populares</zorder>
   </widget>
  </widget>
  <resources>
-  <include location="../python/qrc/poster.qrc"/>
+  <include location="../qrc/poster.qrc"/>
  </resources>
  <connections/>
 </ui>

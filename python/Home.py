@@ -9,7 +9,8 @@ from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QMainWindow,
     QPushButton, QSizePolicy, QWidget)
 
 from login import Ui_login                       
-from tela_inicial import Ui_tela_principal
+from tela_principal import Ui_tela_principal_1
+
 import poster_rc
 
 class Ui_Pag_inicial(object):
@@ -83,7 +84,7 @@ class Ui_Pag_inicial(object):
 
     def entrar_tela_inicial (self):
         self.tela_inicial_window = QMainWindow()  
-        self.inicial_ui = Ui_tela_principal()      
+        self.inicial_ui = Ui_tela_principal_1()      
         self.inicial_ui.setupUi(self.tela_inicial_window)  
         self.tela_inicial_window.show()          
         self.login_window.hide()    

@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>tela_filme_1</class>
+ <widget class="QMainWindow" name="tela_filme_1">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1079</width>
-    <height>589</height>
+    <width>1070</width>
+    <height>640</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
+  <widget class="QWidget" name="tela_filme_01">
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>10</y>
-      <width>1021</width>
-      <height>531</height>
+      <x>0</x>
+      <y>0</y>
+      <width>1081</width>
+      <height>581</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 0, 0);</string>
+     <string notr="true">background-color: rgb(0, 0, 0);
+font: 900 9pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Shape::StyledPanel</enum>
@@ -32,12 +34,12 @@
     <property name="frameShadow">
      <enum>QFrame::Shadow::Raised</enum>
     </property>
-    <widget class="QFrame" name="inicial_2">
+    <widget class="QFrame" name="inicial_1">
      <property name="geometry">
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>1031</width>
+       <width>1081</width>
        <height>51</height>
       </rect>
      </property>
@@ -50,7 +52,7 @@
      <property name="frameShadow">
       <enum>QFrame::Shadow::Raised</enum>
      </property>
-     <widget class="QLabel" name="btn_Cine_filme_2">
+     <widget class="QLabel" name="btn_Cine_filme">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -67,10 +69,10 @@ font: 900 22pt &quot;Segoe UI&quot;;</string>
        <string>CineFilmes</string>
       </property>
      </widget>
-     <widget class="QLabel" name="btn_icon_perfil_2">
+     <widget class="QLabel" name="btn_icon_perfil">
       <property name="geometry">
        <rect>
-        <x>970</x>
+        <x>1030</x>
         <y>10</y>
         <width>27</width>
         <height>27</height>
@@ -83,13 +85,13 @@ font: 900 22pt &quot;Segoe UI&quot;;</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="../python/qrc/poster.qrc">:/icon/icon_perfil.png</pixmap>
+       <pixmap>:/icon/icon_perfil.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="btn_Recomendacao_aleatorio_2">
+     <widget class="QPushButton" name="btn_Recomendacao_aleatorio">
       <property name="geometry">
        <rect>
         <x>430</x>
@@ -123,7 +125,7 @@ background-color: rgb(34, 31, 31);</string>
        <string>Inicio</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btn_Inicio_3">
+     <widget class="QPushButton" name="btn_Filmes_Series">
       <property name="geometry">
        <rect>
         <x>300</x>
@@ -141,6 +143,25 @@ background-color: rgb(34, 31, 31);</string>
        <string>Filmes e Séries</string>
       </property>
      </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>1030</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../qrc/cinefilme.qrc">:/perfil/icon_perfil.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
     </widget>
     <widget class="QLabel" name="img_Star_wars">
      <property name="geometry">
@@ -155,55 +176,107 @@ background-color: rgb(34, 31, 31);</string>
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../python/qrc/poster.qrc">:/icon/star wars.webp</pixmap>
+      <pixmap resource="../qrc/cinefilme.qrc">:/icon 1/star wars.webp</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_Star_Wars_Episodio_IX">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>80</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 11pt &quot;Segoe UI&quot;;
+font: 900 9pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Star Wars: Episódio IX</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_19_de_dezembro_2019">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>100</y>
+       <width>411</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 900 9pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>19 de Dezembro de 2019  I 2h 22 minutos I Aventura, Ficção Cientifíca</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_Direcao_J_J_Abrams">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>120</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 900 9pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Direção: J.J.Abrams I Roteiro: Chris Terrio, J.J.Abrams</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_Elenco_Daisy_Ridley_John_Boyega">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>140</y>
+       <width>351</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 900 9pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Elenco: Daisy Ridley, John Boyega, Adam Driver</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="txt_sinopse_Star_wars">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>451</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:900; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:400; color:#ffffff;&quot;&gt;Sinopse:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:400; color:#ffffff;&quot;&gt;Com o retorno do Imperador Palpatine, a Resistência toma a frente da batalha. Treinando para ser uma completa Jedi, Rey se encontra em conflito com passado e futuro, e teme pelas respostas que pode conseguir com Kylo Ren.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="img_Wicked">
      <property name="geometry">
       <rect>
-       <x>500</x>
+       <x>570</x>
        <y>80</y>
-       <width>71</width>
-       <height>111</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../python/qrc/poster.qrc">:/icon/btn_img_wicked.png</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>340</y>
-       <width>71</width>
-       <height>111</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../python/qrc/poster.qrc">:/icon/flow.webp</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_2">
-     <property name="geometry">
-      <rect>
-       <x>520</x>
-       <y>340</y>
        <width>81</width>
        <height>121</height>
       </rect>
@@ -212,10 +285,361 @@ background-color: rgb(34, 31, 31);</string>
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../python/qrc/poster.qrc">:/icon/O_Problema_dos_3_Corpos.webp</pixmap>
+      <pixmap resource="../qrc/cinefilme.qrc">:/icon 2/btn_img_wicked.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_Wicked">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>80</y>
+       <width>49</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 900 9pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Wicked</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_21_de_novembro_de_2024">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>100</y>
+       <width>391</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>21 de novembro de 2024 | 2h 40min | Fantasia, Comédia Musical</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_Direcao_Jon_M_Chu">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>120</y>
+       <width>341</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Direção: Jon M. Chu | Roteiro Winnie Holzman, Dana Fox</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_Elenco_Cyntia_Erivo_Ariana_Grande">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>140</y>
+       <width>321</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Elenco: Cynthia Erivo, Ariana Grande, Jonathan Bailey</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="txt_Sinopse_Wicked">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>210</y>
+       <width>451</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:900; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:400; color:#ffffff;&quot;&gt;Sinopse:&lt;br /&gt;Na Terra de Oz, uma jovem chamada Elphaba forma uma improvável amizade com uma estudante popular chamada Glinda. Após um encontro com o Mágico de Oz, o relacionamento delas logo chega a uma encruzilhada.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="img_Flow">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>310</y>
+       <width>71</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../qrc/cinefilme.qrc">:/icon 3/flow.webp</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_Flow">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>310</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Flow</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_20_de_fevereiro_2025">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>330</y>
+       <width>401</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>20 de fevereiro de 2025 | 1h 25min | Aventura, Animação, Fantasia</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_Direcao_Gints_Zilbalodis">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>350</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Direção: Gints Zilbalodis |</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_Roteiro_Gints_Zilbalodis_Matiss_Kaza">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>370</y>
+       <width>221</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Roteiro: Gints Zilbalodis, Matīss Kaža</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="txt_Sinopse_Flow">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>430</y>
+       <width>451</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:900; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:400; color:#ffffff;&quot;&gt;Sinopse:&lt;br /&gt;Gato é um animal solitário, mas quando seu lar é devastado por uma grande inundação, ele encontra refúgio em um barco povoado por várias espécies, e tem que se unir a elas apesar de suas diferenças.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="img_O_Problema_dos_tres_corpos">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>310</y>
+       <width>71</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../qrc/cinefilme.qrc">:/icon 4/O_Problema_dos_3_Corpos.webp</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_O_Ptoblema_dos_tres_corpos">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>310</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>O Problema dos 3 corpos</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_Desde_2024">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>330</y>
+       <width>261</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Desde 2024 | min | Drama, Ficção Científica</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_Criado_por_David_Benioff">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>350</y>
+       <width>231</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Criado por: David Benioff, D.B. Weiss</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_Elenco_Jovan_Adepo">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>370</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Elenco: Jovan Adepo, Liam Cunningham, Eiza Gonzalez</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txt_Nacionalidade_EUA">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>390</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nacionalidade EUA</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="txt_Sinopse_O_Problema_dos_tres_corpos">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>430</y>
+       <width>501</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:900; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:400; color:#ffffff;&quot;&gt;Sinopse:&lt;br /&gt;China, final dos anos 1960. Enquanto o país inteiro está sendo devastado pela violência da Revolução Cultural, um pequeno grupo de astrofísicos, militares e engenheiros começa um projeto ultrassecreto envolvendo ondas sonoras e seres extraterrestres.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_01">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>540</y>
+       <width>41</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>01</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_02">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>540</y>
+       <width>41</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>02</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_03">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>540</y>
+       <width>41</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>03</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_04">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>540</y>
+       <width>41</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>04</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_05">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>540</y>
+       <width>41</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>05</string>
      </property>
     </widget>
    </widget>
@@ -225,16 +649,15 @@ background-color: rgb(34, 31, 31);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1079</width>
-     <height>22</height>
+     <width>1070</width>
+     <height>33</height>
     </rect>
    </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
+  <include location="../qrc/cinefilme.qrc"/>
   <include location="../python/qrc/poster.qrc"/>
-  <include location="../../../../AppData/Local/Programs/Python/Python312/Lib/site-packages/python/qrc/poster.qrc"/>
  </resources>
  <connections/>
 </ui>
