@@ -19,7 +19,7 @@
      <rect>
       <x>30</x>
       <y>10</y>
-      <width>1071</width>
+      <width>1061</width>
       <height>531</height>
      </rect>
     </property>
@@ -69,7 +69,7 @@ font: 900 22pt &quot;Segoe UI&quot;;</string>
        <string>CineFilmes</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btn_Recomendacao_aleatorio_8">
+     <widget class="QPushButton" name="btn_Recomendacao_aleatorio">
       <property name="geometry">
        <rect>
         <x>430</x>
@@ -121,27 +121,8 @@ background-color: rgb(34, 31, 31);</string>
        <string>Filmes e Séries</string>
       </property>
      </widget>
-     <widget class="QLabel" name="btn_Icon_Perfil">
-      <property name="geometry">
-       <rect>
-        <x>1040</x>
-        <y>10</y>
-        <width>31</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap resource="../qrc/filmecinco.qrc">:/icon4/icon_perfil.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
     </widget>
-    <widget class="QLabel" name="img_Pousando_No_Amor">
+    <widget class="QLabel" name="btn_Pousando_No_Amor">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -179,7 +160,7 @@ background-color: rgb(34, 31, 31);</string>
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QLabel" name="img_Duna_Profecia">
+    <widget class="QLabel" name="btn_Duna_Profecia">
      <property name="geometry">
       <rect>
        <x>530</x>
@@ -413,7 +394,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>530</x>
-       <y>210</y>
+       <y>220</y>
        <width>491</width>
        <height>101</height>
       </rect>
@@ -434,9 +415,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>390</x>
-       <y>490</y>
+       <y>480</y>
        <width>31</width>
-       <height>24</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -450,9 +431,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>430</x>
-       <y>490</y>
+       <y>480</y>
        <width>31</width>
-       <height>24</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -466,9 +447,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>470</x>
-       <y>490</y>
+       <y>480</y>
        <width>31</width>
-       <height>24</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -482,9 +463,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>510</x>
-       <y>490</y>
+       <y>480</y>
        <width>31</width>
-       <height>24</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -498,9 +479,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>550</x>
-       <y>490</y>
+       <y>480</y>
        <width>31</width>
-       <height>24</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">

@@ -17,8 +17,8 @@
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>10</y>
+      <x>30</x>
+      <y>3310</y>
       <width>1091</width>
       <height>621</height>
      </rect>
@@ -143,32 +143,13 @@ background-color: rgb(34, 31, 31);</string>
        <string>Filmes e Séries</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>1040</x>
-        <y>10</y>
-        <width>31</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap resource="../qrc/cinefilme.qrc">:/icon perfil/icon_perfil.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
     </widget>
-    <widget class="QLabel" name="img_Star_wars">
+    <widget class="QLabel" name="btn_Star_wars">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>10</x>
        <y>80</y>
-       <width>71</width>
+       <width>81</width>
        <height>111</height>
       </rect>
      </property>
@@ -272,7 +253,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:400; color:#ffffff;&quot;&gt;Com o retorno do Imperador Palpatine, a Resistência toma a frente da batalha. Treinando para ser uma completa Jedi, Rey se encontra em conflito com passado e futuro, e teme pelas respostas que pode conseguir com Kylo Ren.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
-    <widget class="QLabel" name="img_Wicked">
+    <widget class="QLabel" name="btn_Wicked">
      <property name="geometry">
       <rect>
        <x>560</x>
@@ -367,7 +348,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:400; color:#ffffff;&quot;&gt;Sinopse:&lt;br /&gt;Na Terra de Oz, uma jovem chamada Elphaba forma uma improvável amizade com uma estudante popular chamada Glinda. Após um encontro com o Mágico de Oz, o relacionamento delas logo chega a uma encruzilhada.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
-    <widget class="QLabel" name="img_Flow">
+    <widget class="QLabel" name="btn_Flow">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -458,7 +439,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:400; color:#ffffff;&quot;&gt;Sinopse:&lt;br /&gt;Gato é um animal solitário, mas quando seu lar é devastado por uma grande inundação, ele encontra refúgio em um barco povoado por várias espécies, e tem que se unir a elas apesar de suas diferenças.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
-    <widget class="QLabel" name="img_O_Problema_dos_tres_corpos">
+    <widget class="QLabel" name="btn_O_Problema_dos_tres_corpos">
      <property name="geometry">
       <rect>
        <x>550</x>
@@ -650,7 +631,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <x>0</x>
      <y>0</y>
      <width>1152</width>
-     <height>22</height>
+     <height>33</height>
     </rect>
    </property>
   </widget>
