@@ -8,7 +8,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QPushButton,
     QSizePolicy, QWidget)
 
-import poster_rc
+import poster
 
 class Ui_tela_principal_1(object):
     def setupUi(self, tela_principal_1):

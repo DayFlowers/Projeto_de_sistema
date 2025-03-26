@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1179</width>
-    <height>713</height>
+    <width>1226</width>
+    <height>793</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,10 +17,10 @@
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>10</y>
-      <width>1131</width>
-      <height>641</height>
+      <x>40</x>
+      <y>30</y>
+      <width>1151</width>
+      <height>661</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -37,7 +37,7 @@
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>1141</width>
+       <width>1161</width>
        <height>51</height>
       </rect>
      </property>
@@ -374,8 +374,8 @@ font: 900 9pt &quot;Segoe UI&quot;;</string>
     <widget class="QLabel" name="txt_2021_2025_1_h_Drama_Suspense">
      <property name="geometry">
       <rect>
-       <x>680</x>
-       <y>90</y>
+       <x>890</x>
+       <y>70</y>
        <width>201</width>
        <height>31</height>
       </rect>
@@ -391,10 +391,10 @@ font: 900 9pt &quot;Segoe UI&quot;;</string>
     <widget class="QLabel" name="txt_Criado_por_Hwang_Dong_hyuk">
      <property name="geometry">
       <rect>
-       <x>680</x>
-       <y>120</y>
+       <x>890</x>
+       <y>110</y>
        <width>191</width>
-       <height>16</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -408,10 +408,10 @@ font: 900 9pt &quot;Segoe UI&quot;;</string>
     <widget class="QLabel" name="txt_Elenco_Jung_Jae_Lee_Lee_Byung_Hun_Wi_Ha_Joon">
      <property name="geometry">
       <rect>
-       <x>680</x>
+       <x>860</x>
        <y>140</y>
-       <width>301</width>
-       <height>31</height>
+       <width>271</width>
+       <height>61</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -638,9 +638,9 @@ color: rgb(255, 255, 255);</string>
      <property name="geometry">
       <rect>
        <x>590</x>
-       <y>70</y>
-       <width>81</width>
-       <height>121</height>
+       <y>60</y>
+       <width>251</width>
+       <height>141</height>
       </rect>
      </property>
      <property name="text">
@@ -660,7 +660,7 @@ color: rgb(255, 255, 255);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1179</width>
+     <width>1226</width>
      <height>22</height>
     </rect>
    </property>
@@ -669,6 +669,7 @@ color: rgb(255, 255, 255);</string>
  </widget>
  <resources>
   <include location="../qrc/filmequatro.qrc"/>
+  <include location="../../../../.designer/qrc/filmequatro.qrc"/>
  </resources>
  <connections/>
 </ui>

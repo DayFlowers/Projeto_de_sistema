@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1002</width>
-    <height>493</height>
+    <height>477</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -120,9 +120,9 @@ background-color: rgb(255, 0, 0);</string>
      <property name="geometry">
       <rect>
        <x>-10</x>
-       <y>0</y>
+       <y>-10</y>
        <width>981</width>
-       <height>441</height>
+       <height>451</height>
       </rect>
      </property>
      <property name="text">
@@ -135,6 +135,26 @@ background-color: rgb(255, 0, 0);</string>
       <bool>true</bool>
      </property>
     </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>-1</y>
+       <width>931</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../qrc/fme.qrc">:/icon 01/fme.jpg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <zorder>label_2</zorder>
     <zorder>label</zorder>
     <zorder>txt_CineFilmes</zorder>
     <zorder>txt_Seu_Guia_de_Filmes_e_Series</zorder>
@@ -145,7 +165,7 @@ background-color: rgb(255, 0, 0);</string>
   </widget>
  </widget>
  <resources>
-  <include location="../python/qrc/poster.qrc"/>
+  <include location="../qrc/fme.qrc"/>
  </resources>
  <connections/>
 </ui>

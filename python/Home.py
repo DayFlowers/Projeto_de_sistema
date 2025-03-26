@@ -8,16 +8,13 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QMainWindow,
     QPushButton, QSizePolicy, QWidget)
 
-from login import Ui_login                       
-from tela_principal import Ui_tela_principal_1
-
-import poster_rc
+import fme
 
 class Ui_Pag_inicial(object):
     def setupUi(self, Pag_inicial):
         if not Pag_inicial.objectName():
             Pag_inicial.setObjectName(u"Pag_inicial")
-        Pag_inicial.resize(1002, 493)
+        Pag_inicial.resize(1002, 477)
         self.tela_inicial = QWidget(Pag_inicial)
         self.tela_inicial.setObjectName(u"tela_inicial")
         self.Home = QFrame(self.tela_inicial)
@@ -54,9 +51,15 @@ class Ui_Pag_inicial(object):
 "background-color: rgb(255, 0, 0);")
         self.label = QLabel(self.Home)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(-10, 0, 981, 441))
+        self.label.setGeometry(QRect(-10, -10, 981, 451))
         self.label.setPixmap(QPixmap(u":/fme/fme.jpg"))
         self.label.setScaledContents(True)
+        self.label_2 = QLabel(self.Home)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setGeometry(QRect(0, -1, 931, 421))
+        self.label_2.setPixmap(QPixmap(u":/icon 01/fme.jpg"))
+        self.label_2.setScaledContents(True)
+        self.label_2.raise_()
         self.label.raise_()
         self.txt_CineFilmes.raise_()
         self.txt_Seu_Guia_de_Filmes_e_Series.raise_()
@@ -68,26 +71,7 @@ class Ui_Pag_inicial(object):
         self.retranslateUi(Pag_inicial)
 
         QMetaObject.connectSlotsByName(Pag_inicial)
-
-        self.btn_Entrar.clicked.connect(self.entrar_login)
-        self.btn_Descubra_Filmes_e_Series.clicked.connect(self.entrar_tela_inicial)
-
     # setupUi
-    def entrar_login(self):
-        
-        self.login_window = QMainWindow()  
-        self.login_ui = Ui_login()      
-        self.login_ui.setupUi(self.login_window) 
-        #self.Home.close()
-        self.login_window.show()          
-        self.Home.hide()
-
-    def entrar_tela_inicial (self):
-        self.tela_inicial_window = QMainWindow()  
-        self.inicial_ui = Ui_tela_principal_1()      
-        self.inicial_ui.setupUi(self.tela_inicial_window)  
-        self.tela_inicial_window.show()          
-        self.login_window.hide()    
 
     def retranslateUi(self, Pag_inicial):
         Pag_inicial.setWindowTitle(QCoreApplication.translate("Pag_inicial", u"MainWindow", None))
@@ -97,6 +81,7 @@ class Ui_Pag_inicial(object):
         self.btn_Descubra_Filmes_e_Series.setText(QCoreApplication.translate("Pag_inicial", u"Descubra Filmes e S\u00e9ries", None))
         self.btn_Entrar.setText(QCoreApplication.translate("Pag_inicial", u"Entrar", None))
         self.label.setText("")
+        self.label_2.setText("")
     # retranslateUi
 
 import sys
@@ -105,8 +90,8 @@ from Home import Ui_Pag_inicial
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    MainWindow = QMainWindow()
-    ui = Ui_Pag_inicial()  # Correção: agora é uma instância da classe
-    ui.setupUi(MainWindow)
-    MainWindow.show()
+    Form = QMainWindow()
+    ui = Ui_Pag_inicial()
+    ui.setupUi(Form)
+    Form.show()
     sys.exit(app.exec())
